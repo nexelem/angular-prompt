@@ -93,6 +93,16 @@ angular.module('cgPrompt').controller('cgPromptCtrl',['$scope','options','$timeo
             if (elem.focus) {
                 elem.focus();
             }
+        } else {
+            var primaryBtn = document.querySelector('.btn-primary');
+            if (primaryBtn) {
+                if (primaryBtn.select) {
+                    primaryBtn.select();
+                }
+                if (primaryBtn.focus) {
+                    primaryBtn.focus();
+                }
+            }
         }
     },100);
     
